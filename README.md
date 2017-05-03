@@ -30,10 +30,16 @@
 
 ##### Q1: Hits to Page
 - [q1_mapper_page.py](https://github.com/linxinzhe/intro_to_hadoop_and_map_reduce/blob/master/project_web_access_log/q1_mapper_page.py) : read page
-- [q1_reducer_hits_page.py](https://github.com/linxinzhe/intro_to_hadoop_and_map_reduce/blob/master/project_web_access_log/q1_reducer_hits_page.py) : hits to page
-- [q1_result.txt](https://github.com/linxinzhe/intro_to_hadoop_and_map_reduce/blob/master/project_web_access_log/q1_result.txt): total hits to page
+- [q1_reducer_hits_page.py](https://github.com/linxinzhe/intro_to_hadoop_and_map_reduce/blob/master/project_web_access_log/q1_reducer_hits_page.py) : hits to specific page(/assets/js/the-associates.js)
+- [q1_result.txt](https://github.com/linxinzhe/intro_to_hadoop_and_map_reduce/blob/master/project_web_access_log/q1_result.txt): total hits to specific page
 
 ##### Q2: Hits to IP
 - [q2_mapper_ip.py](https://github.com/linxinzhe/intro_to_hadoop_and_map_reduce/blob/master/project_web_access_log/q2_mapper_ip.py) : read IP
-- [q2_reducer_hits_ip.py](https://github.com/linxinzhe/intro_to_hadoop_and_map_reduce/blob/master/project_web_access_log/q2_reducer_hits_ip.py) : hits to IP
-- [q2_result.txt](https://github.com/linxinzhe/intro_to_hadoop_and_map_reduce/blob/master/project_web_access_log/q2_result.txt): total hits to IP
+- [q2_reducer_hits_ip.py](https://github.com/linxinzhe/intro_to_hadoop_and_map_reduce/blob/master/project_web_access_log/q2_reducer_hits_ip.py) : hits to specific IP(10.99.99.186)
+- [q2_result.txt](https://github.com/linxinzhe/intro_to_hadoop_and_map_reduce/blob/master/project_web_access_log/q2_result.txt): total hits to specific IP
+
+##### Q3: Most Popular Path
+- [q3_mapper_pathname.py](https://github.com/linxinzhe/intro_to_hadoop_and_map_reduce/blob/master/project_web_access_log/q3_mapper_pathname.py) : read pathname
+- [q3_reducer_most_popular.py](https://github.com/linxinzhe/intro_to_hadoop_and_map_reduce/blob/master/project_web_access_log/q3_reducer_most_popular.py) : hits per pathname
+- [q3_result.txt](https://github.com/linxinzhe/intro_to_hadoop_and_map_reduce/blob/master/project_web_access_log/q3_result.txt): hits per pathname
+- [q3_result_sort.py](https://github.com/linxinzhe/intro_to_hadoop_and_map_reduce/blob/master/project_web_access_log/q3_result_sort.py): use to find out the most popular 3 pathname
