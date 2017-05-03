@@ -3,7 +3,7 @@
 import sys
 
 totalCount = 0
-HIT_PAGE = "/assets/js/the-associates.js"
+HIT_IP = "10.99.99.186"
 
 for line in sys.stdin:
     data_mapped = line.strip().split("\t")
@@ -13,7 +13,7 @@ for line in sys.stdin:
 
     thisKey, thisCount = data_mapped
 
-    if thisKey == HIT_PAGE:
+    if thisKey == HIT_IP:
         totalCount += int(thisCount)
 
-print "Hit Page:", HIT_PAGE, " Count:", totalCount
+print "Hit IP:", HIT_IP, " Count:", totalCount
