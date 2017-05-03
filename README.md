@@ -1,4 +1,4 @@
-## Project - Intro to Hadoop and MapReduce - Udacity
+## Project - [Intro to Hadoop and MapReduce - Udacity](https://www.udacity.com/course/intro-to-hadoop-and-mapreduce--ud617)
 
 ### Folder project_purchases
 - [Input data format](https://github.com/linxinzhe/intro_to_hadoop_and_map_reduce/blob/master/project_puchases/sample_purchases.txt)
