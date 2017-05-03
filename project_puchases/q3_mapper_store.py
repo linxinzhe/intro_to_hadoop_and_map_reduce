@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# above is necessary for hadoop streaming
 
 # Format of each line is:
 # date\ttime\tstore name\titem description\tcost\tmethod of payment

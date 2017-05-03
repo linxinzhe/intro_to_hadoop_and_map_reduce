@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# above is necessary for hadoop streaming
 
 import sys
 
