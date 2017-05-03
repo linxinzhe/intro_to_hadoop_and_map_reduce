@@ -1,8 +1,10 @@
 #!/usr/bin/python
 # above is necessary for hadoop streaming
 
+import sys
 
-def setup_call_andCloseOut():
+
+def run():
     totalCount = 0
     HIT_IP = "10.99.99.186"
 
@@ -21,11 +23,10 @@ def setup_call_andCloseOut():
 
 
 if __name__ == '__main__':
-
     try:
-        setup_call_andCloseOut()
-    except:
-        import sys, traceback, StringIO
+        run()
+    except Exception as e:
+        import traceback, StringIO
 
         fakeeWriteable = StringIO.StringIO()
 
@@ -37,3 +38,5 @@ if __name__ == '__main__':
         msg += "------------------------------------------------------\n"
 
         sys.stderr.write(msg)
+
+        raise e
