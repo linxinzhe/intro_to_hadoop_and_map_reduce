@@ -1,6 +1,6 @@
 ## Project - [Intro to Hadoop and MapReduce - Udacity](https://www.udacity.com/course/intro-to-hadoop-and-mapreduce--ud617)
 
-### Folder project_purchases
+### FOLDER project_purchases
 - [Input data format](https://github.com/linxinzhe/intro_to_hadoop_and_map_reduce/blob/master/project_puchases/sample_purchases.txt)
     - 2012-01-01	09:00	San Jose	Men's Clothing	214.05	Amex
     - 2012-01-01	09:00	Fort Worth	Women's Clothing	153.57	Visa
@@ -22,7 +22,7 @@
 - [q3_reducer_total_sales.py](https://github.com/linxinzhe/intro_to_hadoop_and_map_reduce/blob/master/project_puchases/q3_reducer_total_sales.py) : total sales of all stores
 - [q3_result.txt](https://github.com/linxinzhe/intro_to_hadoop_and_map_reduce/blob/master/project_puchases/q3_result.txt): total sales of all stores
 
-### Folder project_web_access_log
+### FOLDER project_web_access_log
 - [Input data format](https://github.com/linxinzhe/intro_to_hadoop_and_map_reduce/blob/master/project_web_access_log/sample_access.txt)
     - 10.223.157.186 - - [15/Jul/2009:14:58:59 -0700] "GET / HTTP/1.1" 403 202
     - 10.223.157.186 - - [15/Jul/2009:14:58:59 -0700] "GET /favicon.ico HTTP/1.1" 404 209
@@ -43,3 +43,8 @@
 - [q3_reducer_most_popular.py](https://github.com/linxinzhe/intro_to_hadoop_and_map_reduce/blob/master/project_web_access_log/q3_reducer_most_popular.py) : hits per pathname
 - [q3_result.txt](https://github.com/linxinzhe/intro_to_hadoop_and_map_reduce/blob/master/project_web_access_log/q3_result.txt): hits per pathname
 - [q3_result_sort.py](https://github.com/linxinzhe/intro_to_hadoop_and_map_reduce/blob/master/project_web_access_log/q3_result_sort.py): use to find out the most popular 3 pathname
+
+### FOLDER map_reduce_design_pattern
+- Filtering Pattern
+    - filtering.py
+    - top_10.py
