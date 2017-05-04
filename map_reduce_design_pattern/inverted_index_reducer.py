@@ -6,7 +6,7 @@ import sys
 
 def run():
     oldKey = None
-    index_list = set()
+    index_list = []
 
     for line in sys.stdin:
         data_mapped = line.strip().split("\t")
@@ -19,10 +19,10 @@ def run():
         if this_key != oldKey:
             if oldKey:
                 print "{0}\t{1}".format(oldKey, index_list)
-            index_list = set()
+            index_list = []
             oldKey = this_key
 
-        index_list.add(this_index)
+        index_list.append(this_index)
 
 
 if __name__ == '__main__':
