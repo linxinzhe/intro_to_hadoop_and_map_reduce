@@ -6,7 +6,7 @@ import sys
 word = "fantastic"
 
 for line in sys.stdin:
-    data_mapped = word.strip().split("\t")
+    data_mapped = line.strip().split("\t")
     if len(data_mapped) != 2:
         # Something has gone wrong. Skip this line.
         continue
@@ -14,4 +14,4 @@ for line in sys.stdin:
     this_key, this_index = data_mapped
 
     if this_key == word:
-        print this_index
+        print word, len(this_index)
