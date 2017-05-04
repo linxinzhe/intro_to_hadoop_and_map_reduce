@@ -14,4 +14,4 @@ for line in sys.stdin:
     this_key, this_index = data_mapped
 
     if this_key == word:
-        print word, len(this_index)
+        print word, len(eval(this_index))
