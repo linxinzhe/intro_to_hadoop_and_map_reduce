@@ -19,10 +19,10 @@ def run():
         if this_key != oldKey:
             if oldKey:
                 print "{0}\t{1}".format(oldKey, index_list)
-            oldKey = this_key
             index_list = []
-        else:
-            index_list.append(this_index)
+            oldKey = this_key
+
+        index_list.append(this_index)
 
 
 if __name__ == '__main__':

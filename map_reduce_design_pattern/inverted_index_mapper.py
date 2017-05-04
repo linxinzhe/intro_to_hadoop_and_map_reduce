@@ -22,7 +22,7 @@ def run():
             data = still_one_line.strip().split("\t")
 
             if len(data) == tab_count:
-                node_id, body = data[0], data[4]
+                node_id, body = data[0][1:-1], data[4]
                 words = set(re.split("[^A-Za-z]+", body.lower()))
                 for word in words:
                     if word:
