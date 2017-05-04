@@ -1,6 +1,7 @@
 #!/usr/bin/python
 # above is necessary for hadoop streaming
 
+import csv
 import re
 import sys
 
@@ -10,24 +11,19 @@ def run():
     tab_count = 0
     still_one_line = ""
 
-    for line in sys.stdin:
+    reader = csv.reader(sys.stdin, delimiter="\t")
+    for line in reader:
         if is_first_line:
-            tab_count = len(line.strip().split("\t"))
+            tab_count = len(line)
             is_first_line = False
             continue
 
-        still_one_line += line.strip()
-
-        if line.strip().endswith('\"'):
-            data = still_one_line.strip().split("\t")
-
-            if len(data) == tab_count:
-                node_id, body = data[0][1:-1], data[4]
-                words = set(re.split("[^A-Za-z]+", body.lower()))
-                for word in words:
-                    if word:
-                        print "{0}\t{1}".format(word, node_id)
-            still_one_line = ""
+        if len(line) == tab_count:
+            node_id, body = line[0], line[4]
+            words = set(re.split("[^A-Za-z]+", body.lower()))
+            for word in words:
+                if word:
+                    print "{0}\t{1}".format(word, node_id)
 
 
 if __name__ == '__main__':
