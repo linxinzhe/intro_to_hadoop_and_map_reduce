@@ -48,3 +48,6 @@
 - Filtering Pattern
     - filtering.py
     - top_10.py
+- Summarization Pattern
+    - inverted_index_mapper.py inverted_index_reducer.py
+    - 
