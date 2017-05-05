@@ -50,4 +50,4 @@
     - top_10.py
 - Summarization Pattern
     - inverted_index_mapper.py inverted_index_reducer.py
-    - 
+    - finding_mean_mapper.py finding_mean_reducer.py
